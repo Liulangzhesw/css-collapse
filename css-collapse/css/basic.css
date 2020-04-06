@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 500px;
+	margin: 20px auto;
+}
+.container>div {
+	width: 100%；
+}
+input{
+	display: none;
+}
+label {
+	display: block;
+	width: 100%;
+	margin-top:0.5%;
+	font-size: 1em;
+	color: white;
+	background-color: #ccc;
+	border-radius: 5px;
+}
+.container>div>div {
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	background-color: #ccc;
+	display: none;
+	transition:  0.5s height;
+}
+input:checked + label {
+	background-color: #aaa;
+}
+input:checked + label+div {
+	height: 100px;
+	display: block;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+}
